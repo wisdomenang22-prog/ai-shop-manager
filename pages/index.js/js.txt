@@ -1,0 +1,9 @@
+export default function Home() {
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Welcome to AI Shop Manager 🛒</h1>
+      <p>Your smart online store is live!</p>
+      <a href="/login">Go to Login</a>
+    </div>
+  );
+}
