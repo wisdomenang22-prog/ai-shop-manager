@@ -1,11 +1,48 @@
 export default function Home() {
   return (
-    <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
-      <h1>🚀 AI Shop Manager</h1>
-      <p>Welcome! Your deployment is working on Vercel 🎉</p>
-      <a href="/login" style={{ marginTop: "20px", padding: "10px 20px", background: "#0070f3", color: "white", borderRadius: "5px", textDecoration: "none" }}>
-        Go to Login
-      </a>
+    <div style={{
+      minHeight: "100vh",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      flexDirection: "column",
+      background: "#f9fafb",
+      fontFamily: "sans-serif"
+    }}>
+      <h1 style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "1rem" }}>
+        🚀 AI Shop Manager
+      </h1>
+      <p style={{ fontSize: "1.1rem", marginBottom: "2rem" }}>
+        Welcome! Your deployment is live on Vercel 🎉
+      </p>
+
+      <div style={{ display: "flex", gap: "1rem" }}>
+        <a
+          href="/login"
+          style={{
+            padding: "10px 20px",
+            background: "#0070f3",
+            color: "white",
+            borderRadius: "8px",
+            textDecoration: "none"
+          }}
+        >
+          🔑 Login
+        </a>
+
+        <a
+          href="/admin/dashboard"
+          style={{
+            padding: "10px 20px",
+            background: "#10b981",
+            color: "white",
+            borderRadius: "8px",
+            textDecoration: "none"
+          }}
+        >
+          📊 Admin Dashboard
+        </a>
+      </div>
     </div>
   );
 }
